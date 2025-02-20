@@ -10,35 +10,56 @@ Neural Captions is a project intended for generating accurate AI Subtitles, with
 
   
 ### Logic
+#### Full Version
 1. When the Video is selected by the user, the Audio Track Gets Extracted by [FFmpeg](https://www.ffmpeg.org/).
 2. Then the audio of a voice is detected and the extracted.
 3. The extraced Voice Audio is then Processed and Cut into timestamps based of whether there is a voice or not.
 4. Then Based on the timestamps the Audio is transcribed and saved into a SRT file.
 
-## System Requirements
-Although this can run nearly on any system as it can be ran on CPU too, but due to the complexity involved. 
-So it is highly recommended for it to run faster, please use a GPU 
+#### Light Version
+The Light Version is about 7.5 to 8 times faster, offering the Same or Better Accuracy of Transcription with insane speed.
+<br>
+For Context the following Data Can Be Referred.
 
-> For Context on an Intel i3-7100U (Mobile Chip for Light Tasks), with 4GB RAM (DDR3) and No GPU, for it to process a 25 Minute Video, it took about 2.5 Hours.
+> **Testing Specs**  
+>  
+> - **CPU:** Intel i3-7100U (Laptop Mobile Chip)  
+> - **RAM:** 4GB (DDR3 2133MHz)  
+> - **GPU:** None  
+
+<br>
+
+
+| Media | Full Version | Light Version |
+|----------|----------|----------|
+| 1.5 Minutes   | 15 Minutes   | 1.2 Minutes   |
+| 22 Minutes   | 2 Hours   | 20 Minutes   |
+| 2.5 Hours   | N/A   | 2.4 Hours   |
+
+
+1. When the Video is selected by the user, the Audio Track Gets Extracted by [FFmpeg](https://www.ffmpeg.org/).
+2. The Audio is transcribed with [Faster Whisper](https://github.com/SYSTRAN/faster-whisper).
+3. Then Silero VAD is used to detect and Sync TimeStamps.
+4. Then saved into a SRT file.
+
+## System Requirements
+
 <br><br>
 > Optimized it to use all the Threads of the CPU and the Utilization was at 100% for the duration of the Test.
+### Specs
 
-### Minimum Requirements:
-- CPU: **Intel i3** 6th Generation or **AMD** Equivalent
-- GPU: **Not Required**
-- RAM: **4GB**
+|  | Minimum | Recommended |
+|----------|----------|----------|
+| CPU   | Intel i3 6th Generation Equivalent   | Intel i5 7th Generation or Equivalent   |
+| GPU   | N/A   | RTX 2080Ti or Equivalent   |
+| RAM   | 4 GB   | 8 GB (Video + System)   |
 
-### Recommended Requirements:
-- CPU: **Intel i5** 7th Generation or **AMD** Equivalent
-- GPU: **RTX 2080Ti** or **AMD** Equivalent
-- RAM: **8GB**
 
 ## To Be Added
 - Better Optimisation and Faster Running On Older Hardware.
 - Charecter Speech Detection
   > Enabling the User to type in the Name of Charecters & an Audio Sample, which can be used to detect who is saying what & implement in Captions
-- Better Speech Detection
-  > Specially In Music Video, using APIs to find the Lyrics & Syncing them with the Audio.
+- Easy UIx with PyQt6, for Users to Access.
 
 
 ## Contact
