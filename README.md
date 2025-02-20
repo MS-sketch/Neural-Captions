@@ -43,8 +43,6 @@ For Context the following Data Can Be Referred.
 4. Then saved into a SRT file.
 
 ## System Requirements
-
-<br><br>
 > Optimized it to use all the Threads of the CPU and the Utilization was at 100% for the duration of the Test.
 ### Specs
 
