@@ -49,7 +49,7 @@ For Context the following Data Can Be Referred.
 |  | Minimum | Recommended |
 |----------|----------|----------|
 | CPU   | Intel i3 6th Generation Equivalent   | Intel i5 7th Generation or Equivalent   |
-| GPU   | N/A   | RTX 2080Ti or Equivalent   |
+| GPU   | N/A   | RTX 1060 or Equivalent   |
 | RAM   | 4 GB   | 8 GB (Video + System)   |
 
 
