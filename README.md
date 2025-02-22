@@ -61,4 +61,4 @@ For Context the following Data Can Be Referred.
 
 
 ## Contact
-Email: sarkar.mainakh@yandex.com
+Email: mainakh.cloud@gmail.com
