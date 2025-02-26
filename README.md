@@ -35,8 +35,8 @@ For Context the following Data Can Be Referred.
 | 1.5 Minutes   | 15 Minutes   | 1.2 Minutes   |
 | 22 Minutes   | 2 Hours   | 20 Minutes   |
 | 2.5 Hours   | N/A   | 2.4 Hours   |
-
-
+> **Warning:** May Take Longer To Process Higher Quality Audio.
+<br>
 1. When the Video is selected by the user, the Audio Track Gets Extracted by [FFmpeg](https://www.ffmpeg.org/).
 2. The Audio is transcribed with [Faster Whisper](https://github.com/SYSTRAN/faster-whisper).
 3. Then Silero VAD is used to detect and Sync TimeStamps.
@@ -61,4 +61,4 @@ For Context the following Data Can Be Referred.
 
 
 ## Contact
-Email: mainakh.cloud@gmail.com
+Check @ [My Profile](https://github.com/MS-sketch/)
