@@ -1,6 +1,6 @@
 # Neural-Captions
 Neural Captions is a project intended for generating accurate AI Subtitles, with Proper Sync System, such that the subs match with the dialogue in the Audio Track. 
-> **Note:** This project is currently in its Beta Version.
+> **This project is currently in Beta**
 
 ## Functioning
 ### Tools
